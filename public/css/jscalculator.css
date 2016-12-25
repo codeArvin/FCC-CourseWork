@@ -1,0 +1,61 @@
+body {
+	background-color: lightcoral;
+	text-align: center;
+}
+
+h2 {
+	color: lightcoral;
+}
+
+.screen {
+	width: 305px;
+	height: 35px;
+	background-color: lightgoldenrodyellow;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: right;
+	line-height: 35px;
+	padding-right: 10px;
+	color: lightcoral;
+	font-weight: 600;
+}
+
+.box {
+	width: 350px;
+	height: 400px;
+	border-radius: 15px;
+	background-color: lightpink;
+	margin: 100px auto;
+	padding: 5px;
+	
+}
+
+.buttons {
+	width: 320px;
+	margin: 10px auto;
+}
+
+button {
+	float: left;
+	margin: 2px;
+	width: 75px;
+	height: 50px;
+	border-radius: 5px;
+	color: lightpink;
+	background-color: lightcoral;
+	border: none;
+	outline: none;
+	font-size: 17px;
+}
+
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.ans {
+	float: right;
+	position: relative;
+	left: -4px;
+	height: 104px;
+}

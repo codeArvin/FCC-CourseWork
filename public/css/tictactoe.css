@@ -1,0 +1,141 @@
+body {
+	background-color: lightcoral;
+	text-align: center;
+	color: whitesmoke;
+	vertical-align: middle;
+}
+
+.main {
+	display: block;
+}
+
+h1 {
+	font-size: 50px;
+	margin-top: 20px;
+	font-family: 'ChannelSlanted26d3244dda16fa3';
+}
+
+.choose {
+	margin-top: 30px;
+	font-size: xx-large;
+}
+
+button {
+	margin: 50px;
+	width: 100px;
+	height: 100px;
+	background-color: lightsalmon;
+	border: none;
+	outline: none;
+	font-size: xx-large;
+	color: whitesmoke;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.container {
+	display: none;
+	position: relative;
+	margin: 50px auto;
+	background-color: lightpink;
+	width: 500px;
+	height: 500px;
+	border-radius: 5px;
+}
+
+.box {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+}
+
+.box > div {
+	text-align: center;
+	line-height: 160px;
+	font-size: xx-large;
+	font-weight: 900;
+	float: left;
+	width: 160px;
+	height: 160px;
+	border: 1px solid lightslategray;
+	cursor: pointer;
+}
+
+#top-left {
+	border-top: none;
+	border-left: none;
+}
+
+#top-middle {
+	border-top: none;
+}
+
+#top-right {
+	border-top: none;
+	border-right: none;
+}
+
+#center-left {
+	border-left: none;
+}
+
+#center-right {
+	border-right: none;
+}
+
+#bottom-left {
+	border-left: none;
+	border-bottom: none;
+}
+
+#bottom-middle {
+	border-bottom: red 1px;
+}
+
+#bottom-right {
+	border-bottom: none;
+	border-right: none;
+}
+
+hr {
+	display: none;
+}
+
+hr.top, hr.center, hr.bottom {
+	width: 500px;
+	position: absolute;
+	margin-top: 82px;
+	left: -6px;
+	border: 2px dashed lightslategray;
+}
+
+hr.left, hr.middle, hr.right {
+	position: absolute;
+	border: 2px dashed lightslategray;
+	transform: rotate(90deg);
+	width: 500px;
+	margin-top: 244px;
+	margin-left: -170px;
+}
+
+hr.diagonal1 {
+	position: absolute;
+	border: 2px dashed lightslategray;
+	transform: rotate(45deg);
+	width: 700px;
+	margin-left: -270px;
+	margin-top: 80px;
+}
+
+hr.diagonal2 {
+	position: absolute;
+	border: 2px dashed lightslategray;
+	transform: rotate(135deg);
+	width: 700px;
+	margin-left: -270px;
+	margin-top: 80px;
+}

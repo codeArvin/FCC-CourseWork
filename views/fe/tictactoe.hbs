@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="/js/tictactoe.js"></script>
+		<link rel="stylesheet" href="http://cdn.webfont.youziku.com/webfonts/nomal/94115/45817/581c27aff629d80df8fad808.css" />
+		<link rel="stylesheet" href="/css/tictactoe.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="main">
+			<h1>Tic Tac Toe</h1>
+			<div>
+				<h2>RULES</h2>
+				<p>1. 三个X或三个O连成一条直线的一方获胜</p>
+				<p>2. X先手</p>
+				<p>3. 人先手在[0,0],[2,1],[2,0]或对称位置走子会有bug，还没有找出来，用的minimax算法，用递归没有写出来，直接用两个for循环写的，不知道哪里出了问题，先上传了</p>
+			</div>
+			<div class="choose">
+				<button id="leftButton">X</button>
+				<span>OR</span>
+				<button id="rightButton">O</button>
+			</div>
+		</div>
+
+		<!-- BOX -->
+		<div class="container">
+			<div class="box">
+				<div id="top-left" value="0-0"><hr class="top" /><hr class="left" /></div>
+				<div id="top-middle" value="0-1"><hr class="middle" /></div>
+				<div id="top-right" value="0-2"><hr class="right" /></div>
+				<div id="center-left" value="1-0"><hr class="center" /></div>
+				<div id="center-middle" value="1-1"><hr class="diagonal1" /><hr class="diagonal2" /></div>
+				<div id="center-right" value="1-2"></div>
+				<div id="bottom-left" value="2-0"><hr class="bottom" /></div>
+				<div id="bottom-middle" value="2-1"></div>
+				<div id="bottom-right" value="2-2"></div>
+			</div>
+		</div>
+
+		<!-- result -->
+	</body>
+</html>

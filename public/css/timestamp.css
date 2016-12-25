@@ -1,0 +1,22 @@
+h1 {
+	text-align: center;
+	color: gray;
+}
+
+ul > li {
+	list-style: none;
+	margin: 5px
+}
+
+div {
+	width: 700px;
+	margin: 50px auto;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.color {
+	color: red;
+}

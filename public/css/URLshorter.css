@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+	color: orange;
+}
+
+div {
+	width: 600px;
+	margin: 0 auto;
+}
+
+p {
+	font-weight: 600;
+}

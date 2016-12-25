@@ -1,0 +1,109 @@
+* {
+	padding: 0;
+	margin: 0;	
+}
+
+body {
+	background-color: lightcyan;
+	text-align: center;
+}
+
+h1 {
+	margin-top: 30px;
+	font-family: 'ChannelSlanted26d3244dda16fa3';
+}
+
+.active {
+	color: orangered;
+}
+
+.box {
+	width: 318px;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: solid 1px cyan;
+}
+
+.nav {
+	background-color: cyan;
+}
+
+.nav > div {
+	clear: both;
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	font-size: x-large;
+	line-height: 60px;
+}
+
+.nav > div:hover {
+	cursor: pointer;
+}
+
+#on {
+	border-right: solid 1px darkgray;
+	border-left: solid 1px darkgray;
+}
+
+#onContent, #offContent {
+	display: none;
+}
+
+/* Contents */
+.content {
+	height: 100px;
+	border-bottom: 1px greenyellow solid;
+}
+
+a > div {
+	display: inline-block;
+}
+
+.left {
+	position: relative;
+	top: 15px;
+}
+
+img {
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	outline: none;
+}
+
+.text {
+	width: 150px;
+	height: 120px;
+	position: relative;
+	top: -22px;
+}
+
+.name {
+	position: relative;
+	top: 10px;
+	left: -5px;
+	font-size: medium;
+	font-weight: 600;
+	color: orangered;
+	margin: 0;
+}
+
+.title {
+	margin-top: 0;
+	font-size: smaller;
+	position: relative;
+	top: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+}
+
+.state {
+	position: relative;
+	top: -13px;
+	color: red;
+}

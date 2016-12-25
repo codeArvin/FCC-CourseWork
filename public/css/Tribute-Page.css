@@ -1,0 +1,36 @@
+#main {
+  background-color : lightgray;
+  text-align : left;
+  margin : 2% 5% 2% 5%;
+  border-radius : 5px; 
+  padding-top : 5px;
+  padding-bottom : 5px;
+}
+h1, h2 {
+  text-align : center;
+}
+img {
+  width: 100%
+}
+.div {
+  background-color : white;
+  margin : 0 5% 0 5%;
+  border-radius : 5px;
+}
+.font {
+  font-size : 23px;
+}
+.section {
+  margin : 0 10% 0 10%;
+}
+.center {
+  text-align : center;
+}
+.big {
+ font-size : 20px;
+ font-weight : bold;
+}
+.gray {
+  font-size: 17px;
+  color : gray;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<link rel="stylesheet" href="http://cdn.webfont.youziku.com/webfonts/nomal/94115/45817/581c27aff629d80df8fad808.css" />
+		<link rel="stylesheet" href="/css/pomodorotimer.css" />
+		<title>Pomodoro Timer</title>
+	</head>
+	<body>
+		<h1>Pomodoro Timer</h1>
+		<div class="box" ng-app = 'Timer' ng-controller = 'control'>
+			<div class="set">
+				<div class="break">
+					<p>BREAK LENGTH</p>
+					<button class="button" ng-click='breakLengthChange(-1)'>-</button>
+					<span>{{breakLength}}</span>
+					<button class="button" ng-click='breakLengthChange(1)'>+</button>
+				</div>
+				<div class="session">
+					<p>SESSION LENGTH</p>
+					<button class="button" ng-click='sessionLengthChange(-1)'>-</button>
+					<span>{{sessionLength}}</span>
+					<button class="button" ng-click='sessionLengthChange(1)'>+</button>
+				</div>
+			</div>
+			<div class="show" ng-click='toggleTimer()'>
+				<div class="title">{{title}}</div>
+				<div class="time">{{timeLeft}}</div>
+				<div class="before"></div>
+				<div class="lay" ng-style="{'background':fillColor,'height':fillHeight}"></div>
+			</div>
+		</div>
+	</body>
+	<script src="/js/pomodorotimer.js"></script>
+</html>

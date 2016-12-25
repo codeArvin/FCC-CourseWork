@@ -1,0 +1,75 @@
+body {
+	background-color: #333;
+	color: #333;
+	font-weight: 400;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+h1 {
+	font-family: 'ChannelSlanted26d3244dda16fa3';
+	color: darkred;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.quote-box {
+	background-color: whitesmoke;
+	width: 500px;
+	height: auto;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 40px 25px;
+}
+
+.quote-text {
+	width: 400px;
+	margin: 5px auto;
+	text-align: center;
+	font-size: 30px;
+	opacity: 1;
+	font-weight: bolder;
+}
+
+.quote-author {
+	margin-top: 5px;
+	float: right;
+	font-size: 20px;
+	opacity: 1;
+}
+
+.buttons {
+	margin-top: 40px;
+	text-align: center;
+	padding: 5px;
+}
+
+button {
+	border: none;
+	background-color: #333;
+	height: 40px;
+	color: whitesmoke;
+	font-size: 20px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.share {
+	position: relative;
+	left: -23%;
+}
+
+.quote {
+	position: relative;
+	right: -23%;
+}
+
+button:hover {
+	opacity: 0.9;
+}

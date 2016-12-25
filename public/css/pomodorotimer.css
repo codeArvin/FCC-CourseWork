@@ -1,0 +1,71 @@
+body {
+	background-color: lightcoral;
+	text-align: center;
+	color: whitesmoke;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: 'ChannelSlanted26d3244dda16fa3';
+}
+
+.set > div {
+	display: inline-block;
+	margin: 0 40px;
+}
+
+span, button {
+	font-size: xx-large;
+}
+
+.button {
+	border: none;
+	outline: none;
+	background-color: lightcoral;
+	color: whitesmoke;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.show {
+	position: relative;
+	width: 350px;
+	height: 350px;
+	margin: 10px auto;
+	border-radius: 50%;
+	border: 2px solid greenyellow;
+	overflow: hidden;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 50px;
+	position: relative;
+	top: 80px;
+}
+
+.time {
+	font-size: 60px;
+	position:  relative;
+	top: 150px;
+}
+
+.before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 50%;
+	border: 4px solid lightcoral;
+	z-index: 0;
+}
+
+.lay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}

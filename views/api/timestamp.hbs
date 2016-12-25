@@ -1,0 +1,15 @@
+<h1>Timestamp Mircoservice</h1>
+<div>
+  <h2>在URL后可以传入参数，规则如下：</h2>
+  <ol>
+    <li>如果传入参数为unix时间戳或自然语言描述的日期，会返回一个由unix时间戳和自然语言描述的日期组成的对象</li>
+    <li>如果不是，返回null</li>
+  </ol>
+  <h2>示例：</h2>
+  <ul>
+    <li class="bold">http://fccwork-mks.herokuapp.com/api/timestamp/123456789<br/>http://timestamp-cr.herokuapp.com/1970.1.2</li>
+    <li class="color">返回：{"unix":123456789,"natural":1970-01-02}</li>
+    <li class="bold">http://fccwork-mks.herokuapp.com/api/timestamp/asdasdasd</li>
+    <li class="color">返回：{"unix":null,"natural":null}</li>
+  </ul>
+</div>
