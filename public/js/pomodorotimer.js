@@ -9,17 +9,17 @@ app.controller('control', function($scope, $interval) {
 		secs = 60*$scope.sessionLength,
 		currBeginTime = 60*$scope.sessionLength,
 		secsToHms, toggleTimer, updateTime;
-		
+
 	secsToHms = function (secs) {
 		var h = Math.floor(secs / 3600),
 			m = Math.floor(secs % 3600 / 60),
 			s = Math.floor(secs % 3600 % 60);
-			
+
 		return (
 			(h>0 ? h + ':' + (m<10 ? '0' : '') : '') + m + ":" + (s<10 ? '0' : '') + s
 		);
 	};
-	
+
 	$scope.breakLengthChange = function (n) {
 		if (!runTimer) {
 			$scope.breakLength += n;
@@ -33,13 +33,13 @@ app.controller('control', function($scope, $interval) {
 			}
 		}
 	};
-	
+
 	$scope.sessionLengthChange = function (n) {
 		if (!runTimer) {
 			if ($scope.title === 'SESSION') {
 				$scope.sessionLength += n;
 				if ($scope.sessionLength < 1) {
-					$scope.sessionLength = 1
+					$scope.sessionLength = 1;
 				}
 				$scope.timeLeft = $scope.sessionLength;
 				currBeginTime = 60*$scope.sessionLength;
@@ -47,7 +47,7 @@ app.controller('control', function($scope, $interval) {
 			}
 		}
 	};
-	
+
 	updateTime = function () {
 		secs -= 1;
 		if (secs < 0) {
@@ -70,12 +70,12 @@ app.controller('control', function($scope, $interval) {
 			$scope.timeLeft = secsToHms(secs);
 			var down = currBeginTime,
 				up = secs;
-				
+
 			$scope.fillHeight = (down - up)/down*100 + '%';
 			//alert($scope.fillHeight);
 		}
 	};
-	
+
 	$scope.toggleTimer = function () {
 		if (runTimer) {
 			$interval.cancel(runTimer);
@@ -85,5 +85,5 @@ app.controller('control', function($scope, $interval) {
 			runTimer = $interval(updateTime, 1000);
 		}
 	};
-	
+
 });
